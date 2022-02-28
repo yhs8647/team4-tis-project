@@ -32,8 +32,11 @@
 
 			</section>
 			</nav>
-			<nav class="footbar"></nav>
+			
 		</header>
+		<footer>
+			<nav class="footbar"></nav>
+		</footer>
 	</div>
 </body>
 </html>
