@@ -27,9 +27,11 @@ ul, li{
 	list-style:none;
 	padding-left: 10px;
 }
+
 li{
 	margin-top:20px;
 	font-size:20px;
+
 }
 a{
 	padding:8px;
@@ -45,9 +47,11 @@ a:hover{
 }
 
 .footbar{
+	position:fixed;
+	bottom:0px;
 	align-items:center;
 	width:100%;
-    height:56px;
+    height:80px; 
     padding:12px 40px;
     background:#141517;
 	}
