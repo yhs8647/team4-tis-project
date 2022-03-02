@@ -1,0 +1,98 @@
+h2{
+    color:#fff;
+    transform:translate(-40%,-40%);
+
+    font-size:40px
+}
+
+
+h1{
+    text-align:center;
+}
+
+.profileupdate{
+    margin:0 auto;
+    width:1000px;
+}
+
+.back{
+    margin:0 auto;
+    margin-top: 30px;
+    background-color:#141517;
+    width: 1200px;
+    border-radius: 10%;
+
+}
+
+.profileupdate{
+    margin:0 auto;
+    padding:50px 50px 50px 50px;
+    
+}
+
+.updateinput, .updatedate{
+    width:450px;
+    height:60px;
+    margin-bottom: 70px;
+    font-size:35px;
+    color:#808080;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.updatetr{
+    text-align:center;
+ 
+
+}
+
+input[type='radio'],input[type='radio']:checked{
+    appearance:none;
+    vertical-align: -12px;
+    padding:0;
+
+}
+
+input[type='radio']{
+    border:none;
+    width:50px;
+    height:50px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin:0;
+}
+
+input[type='radio']:checked{
+    
+    transition: all .3s;
+    background-color: #7c7c7c7a;
+}
+
+.radiotext{
+    font-size:40px;
+    text-align: center;
+
+
+}
+
+.gendertd{
+
+
+    display:inline-block;
+    padding:0px 0 0 0;
+    font-size:35px;
+    color:#fff
+
+}
+
+p{
+    padding:50px;
+}
+
+input[type="submit"]{
+    position: relative;
+    width:150px;
+    height:70px;
+    
+
+}
