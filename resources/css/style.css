@@ -23,9 +23,7 @@ body {
 	margin:0 0 0 0;
 	
 }
-h1{
-	padding 0;
-}
+
 
 h1{
 	color:#fff;
@@ -61,12 +59,13 @@ h1{
 	font-size:20px;
 }
 
+
 .maincontent{
      -webkit-flex:1;
      -ms-flex:1;
      flex:1;
      background:#000;
-     padding:0 0 101px;
+     padding:0 0 50px;
 }
 a{
 	padding:8px;

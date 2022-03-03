@@ -1,0 +1,112 @@
+<!--jsp파일 내용 그대로 html로 옴긴 파일입니다.-->
+<html>
+<head>
+	<link rel="stylesheet" href="resources/css/style.css?after"> 
+	<link rel="stylesheet" href="resources/css/profile.css?after">
+    <link rel="stylesheet" href="resources/css/mypage.css?after"> 
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id = "root">
+		<div class="content">
+			<header>
+				<nav class="leftmenu">
+					<a class="logolink" href="#">
+						<img src="resources/img/logo.png" class="logoimg" >	
+					</a>
+				<section class="leftsction">
+					<ul class="leftmenubuttonul">
+						<li class="leftmenubuttonli">
+							<a href="#">영상 보기</a>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="#">평점 게시판</a>
+						</li>	
+						<li class="leftmenubuttonli">
+							<a href="mymovie.html">마이페이지</a>
+                                <li class="mypagesub">
+                                    <a href="profile.html" class="profilea"> 개인정보수정</a>
+                                </li>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="#">관리자페이지</a>
+						</li>					
+					</ul>
+	
+				</section>
+				</nav>
+			</header>
+			<main class="maincontent">
+				<div class="update">
+					<h1>개인정보수정</h1>
+						<div class="back">
+						<table class="profileupdate">
+							<tr class="updatetr">
+								<td>
+									<h2>아이디</h2>
+								</td>
+								<td>
+									<input type="text" name="user_id" class="updateinput" value="admin" disabled>
+								</td>
+							</tr>
+							<tr class="updatetr">
+								<td>
+									<h2>비밀번호</h2>
+								</td>
+								<td>
+									<input type="password" name="password" class="updateinput">
+								</td>
+							</tr>
+							<tr class="updatetr">
+								<td>
+									<h2>성 별</h2>
+								</td>
+								<td class="gendertd">
+										<input type="radio" name="gender" value="man" class="updategender"> 남 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="gender" value="woman" class="updategender"> 여
+								</td>
+							</tr>
+							<tr class="updatetr">
+								<td>
+									<h2>생년월일</h2>
+								</td>
+								<td>
+									<input type="date" name="user_id" value="2022-03-02" min = "1900-01-01" class="updatedate">
+								</td>
+							</tr>
+							<tr class="updatetr">
+								<td>
+									<h2>이메일</h2>
+								</td>
+								<td>
+									<input type="text" name="email" class="updateinput">
+								</td>
+							</tr>
+							<tr class="updatetr">
+								<td>
+									<h2>선호 장르</h2>
+								</td>
+								<td class="checkboxtd">
+									<label><input type="checkbox">장르1</label>&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox">장르2</label>&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox">장르3</label><br><br>
+									<label><input type="checkbox">장르4</label>&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox">장르5</label>&nbsp;&nbsp;&nbsp;&nbsp; <label><input type="checkbox">장르6</label><br><br>
+								</td>
+							</tr>
+						</table>
+						
+					</div>
+						<div class="submitbt">
+							<input type="submit" value="수정완료">
+						</div>
+				</div>
+			
+			</main>		
+		</div>
+		<footer>
+			<nav class="footbar">
+				
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
