@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* 기본 세팅 */
+body,
+div,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+#selectBoard {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+.logout {
+  /* 오른쪽 끝 작게 로그아웃을 한다. */
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+#btn_detail {
+  /* 수정, 삭제, 글등록 버튼이 모인 곳 */
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  height: 40px;
+}
+
+#board_detail {
+  margin-top: 15%;
+  width: 100%;
+  height: 80%;
+}
+
+.firstBoard {
+  height: 15%;
+}
+
+.secondBoard {
+  height: 10%;
+}
+
+.thirdBoard {
+  height: 65%;
+}
+
+.fourthBoard {
+  height: 10%;
+}
+
+.title {
+  width: 80%;
+}
+th {
+  width: 10%;
+  border: 1px solid #ccc;
+}
+
+td {
+  align: "left";
+  border: 1px solid #ccc;
+}
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+}
+
+.list {
+  float: right;
+  font-size: 20px;
+}
