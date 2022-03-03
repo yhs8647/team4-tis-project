@@ -1,0 +1,139 @@
+h2{
+    color:#fff;
+    transform:translate(-40%,-30%);
+
+    font-size:40px
+}
+
+
+h1{
+    text-align:center;
+}
+
+.profileupdate{
+    margin:0 auto;
+    width:1000px;
+}
+
+.back{
+    margin:0 auto;
+    margin-top: 20px;
+    background-color:#141517;
+    width: 1200px;
+    border-radius: 10%;
+    margin-bottom: 50px;
+
+}
+
+.profileupdate{
+    margin:0 auto;
+    padding:50px 50px 0px 50px;
+    
+}
+
+.updateinput, .updatedate{
+    width:450px;
+    height:60px;
+    margin-bottom: 70px;
+    font-size:35px;
+    color:#808080;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.updatetr{
+    text-align:center;
+ 
+
+}
+
+input[type='radio'],input[type='radio']:checked{
+    appearance:none;
+    vertical-align: -12px;
+    padding:0;
+
+}
+
+.checkboxtd{
+    text-align: left;
+    padding:0 0 0 100px;
+    font-size:25px;
+    color:#fff;
+    vertical-align: 30px;
+    margin-bottom: 50px;
+
+}
+
+
+input[type='checkbox'],input[type='checkbox']:checked{
+    padding:0;
+
+}
+
+
+
+
+input[type='checkbox']{
+    width:30px;
+    height:30px;
+}
+
+input[type='radio']{
+    border:none;
+    width:50px;
+    height:50px;
+    background-color:#fff;
+    border-radius:100%;
+    margin:0;
+}
+
+
+
+input[type='radio']:checked{
+    
+    transition:all .3s;
+    background-color:#7c7c7c7a;
+}
+
+.radiotext{
+    font-size:40px;
+    text-align:center;
+
+
+}
+
+.gendertd{
+    display:inline-block;
+    padding:0px 0 0 0;
+    font-size:35px;
+    color:#fff
+}
+
+p{
+    padding:50px;
+}
+
+.submitbt{
+    margin:0 auto;
+    width:300px;
+    height:100px;
+    text-align:center;
+    margin-bottom: 300px;
+}
+
+input[type="submit"]{
+    width:150px;
+    height:70px;
+    border:none;
+    border-radius: 10px;
+    background-color: #7c7c7c7a;
+    font-size: 30px;
+    color:#fff;
+   
+}
+
+input[type="submit"]:checked{
+    background-color: #fff;
+   
+}
+

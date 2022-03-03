@@ -1,0 +1,23 @@
+.lockerbox th {
+	text-align:left;
+}
+
+
+.lockerbox td:first-child img{
+	margin-left:60px;
+}
+
+
+
+img{
+	width:210px;
+	height: 280px;
+	margin-right:30px;
+	margin-left: 30px;
+
+}
+
+h1{
+    margin-top:0px;
+	margin-bottom:-30px;
+}
