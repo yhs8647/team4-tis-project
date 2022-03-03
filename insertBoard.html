@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="BoardStyle.css"> 
+	<title>insertBoard</title>
+</head>
+<body>
+	<div id = "root">
+		<div class="content">
+			<header>
+				<nav class="leftmenu">
+					<a class="logolink" href="#">
+						<img src="logo.png" class="logoimg" >	
+					</a>
+				<section class="leftsction">
+					<ul class="leftmenubuttonul">
+						<li class="leftmenubuttonli">
+							<a href="#">영상 보기</a>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="#">평점 게시판</a>
+						</li>	
+						<li class="leftmenubuttonli">
+							<a href="#">마이페이지</a>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="#">관리자페이지</a>
+						</li>					
+					</ul>
+	
+				</section>
+				</nav>
+			</header>
+			<main class="maincontent"  align="center">
+			<br><br><br>
+            <h2>
+                <a href="#">자유 게시판 - 새글 등록</a>
+            </h2>
+            <br><br><br><br>
+            <table border="1" cellpadding="0" cellspacing="0" width="500">
+                <tr>
+                    <th bgcolor="white" width="100" height="50">제목</th>
+                    <td align="left"><input type="text" /></td>
+                </tr>
+                <tr>
+                    <th bgcolor="white" width="100" height="50">작성자</th>
+                    <td align="left"><input type="text" /></td>
+                </tr>
+                <tr>
+                    <th bgcolor="white" width="100" height="300">내용</th>
+                    <td rows="200px" align="left">
+						<textarea name="content" cols="60" rows="20" ></textarea>
+					</td>
+                </tr>
+                <tr>
+                    <th bgcolor="white" width="100" height="50">파일추가</th>
+                    <td align="left"><input type="file" name="uploadFile" /></td>
+                </tr>
+            
+                
+            </table>
+            <br>
+            <a href="BoardList.html">등록</a>
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</main>		
+		</div>
+		<footer>
+			<nav class="footbar">footer</nav>
+		</footer>
+	</div>
+</body>
+</html>
