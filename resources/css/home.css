@@ -22,14 +22,16 @@ h1 {
 }
 
 .headType {
-	font-size:10px;
+	font-size:12px;
 }
 
 .headImgBox {
-	width: 100%; height: 300px;
+	width: 200px; height: 300px;
 }
 
-.headImgBox img {width: 100%; height:100%; object-fit: cover;}
+.headImgBox img {
+	width: 100%; height:100%; object-fit: cover;
+}
 
 .category li {
 	float:left;
@@ -64,3 +66,4 @@ h1 {
 }
 
 .videoList li img {width: 100%; height:100%; object-fit: cover;}
+
