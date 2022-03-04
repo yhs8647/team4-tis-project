@@ -9,15 +9,60 @@
 
 
 
-img{
+table img{
 	width:210px;
 	height: 280px;
 	margin-right:30px;
 	margin-left: 30px;
+	transition:all .3s;
+
+}
+
+table img:hover{
+	transform:scale(1.1);
+	transition:all .3s;
 
 }
 
 h1{
     margin-top:0px;
 	margin-bottom:-30px;
+}
+
+h4{
+	color:#fff;
+}
+
+.money{
+	text-align:center;
+}
+
+button{
+	border:none;
+	color:#fff;
+	margin-top:10px;
+	width:100px;
+	height:28px
+}
+
+
+
+h5{
+	color:#fff;
+	font-size:20px;
+	white-space:nowrap;
+	margin:0 auto;
+}
+
+.payment{
+	background-color:#F82F62;
+}
+
+
+.close{
+	background-color:#000;
+}
+
+.payment:hover, .close:hover{
+	cursor: pointer;
 }
