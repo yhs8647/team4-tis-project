@@ -1,3 +1,4 @@
+<!--jsp파일 내용 그대로 html로 옴긴 파일입니다.-->
 <html>
   <head>
     <link rel="stylesheet" href="resources/css/style.css?after" />
@@ -36,53 +37,45 @@
         <main class="maincontent">
           <a class="logout" href="logout.do">Log-out</a>
           <div id="btn_detail">
-            <!-- 세션 아이디와 글을 작성한 DB의 id가 같을 시 수정 가능하게 한다. -->
-            <c:set var="userid" name="${sessionScope.userid}" />
             <a class="insert" href="insertBoard.jsp">게시물 등록</a>
             &nbsp;&nbsp;
-            <c:if test="${userid == board.writer}">
-              <a class="modify" href="modifyBoard.do?no=${board.no}"
-                >게시물 수정</a
-              >
-              &nbsp;&nbsp;
-              <a class="delete" href="deleteBoard.do?no=${board.no}"
-                >게시물 삭제</a
-              >
-            </c:if>
+            <a class="delete" href="deleteBoard.do?seq=${board.no}"
+              >게시물 삭제</a
+            >
           </div>
 
           <div id="selectBoard">
-            <table id="board_detail">
-              <tr class="firstBoard">
-                <th>제목</th>
-                <td class="title">${board.title}</td>
-                <th>조회수</th>
-                <td>${board.cnt}</td>
-              </tr>
-              <tr class="secondBoard">
-                <th>작성자</th>
-                <td colspan="3">${board.writer}</td>
-              </tr>
-              <tr class="thirdBoard">
-                <th>내용</th>
-                <td colspan="3">${board.content}</td>
-              </tr>
-              <tr class="fourthBoard">
-                <th>등록일</th>
-                <td colspan="3">${board.regDate}</td>
-              </tr>
-            </table>
-            <!-- 댓글 시작 -->
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <!-- 댓글 끝 -->
-            <a href="getBoardList.do" class="list">글 목록</a>
+            <form action="getBoardList.do" method="post">
+              <table id="board_detail">
+                <tr class="firstBoard">
+                  <th>제목</th>
+                  <td class="title">
+                    <input name="title" type="text" value="${board.title}" />
+                  </td>
+                  <th>조회수</th>
+                  <td>${board.cnt}</td>
+                </tr>
+                <tr class="secondBoard">
+                  <th>작성자</th>
+                  <td colspan="3">${board.writer}</td>
+                </tr>
+                <tr class="thirdBoard">
+                  <th>내용</th>
+                  <td colspan="3">
+                    <textarea name="content" cols="40" rows="10">
+${board.content}</textarea
+                    >
+                  </td>
+                </tr>
+                <tr class="fourthBoard">
+                  <!-- 수정일로? -->
+                  <th>등록일</th>
+                  <td colspan="3">${board.regDate}</td>
+                </tr>
+              </table>
+              <br />
+              <input class="list" type="submit" value="글 목록" />
+            </form>
           </div>
         </main>
       </div>
