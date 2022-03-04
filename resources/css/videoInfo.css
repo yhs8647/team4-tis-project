@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+#wrap {padding-left:240px;}
+
+main{
+     -webkit-flex:1;
+     -ms-flex:1;
+     flex:1;
+     padding:30px;
+}
+
+.backImgBox{
+	background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0) 10%,
+            rgba(0, 0, 0, 0.5) 25%,
+            rgba(0, 0, 0, 1) 50%,
+            rgba(0, 0, 0, 1) 75%,
+            rgba(0, 0, 0, 1) 100%
+          ), url(https://source.unsplash.com/random);
+	background-size: cover;
+	height: 500px;
+	position:relative;
+}
+
+h1 {
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+.headBox > div {
+	float:left;
+}
+
+.avgGradeBox {
+	border: 3px solid #fff;
+	width: 116px;
+	height: 36px;
+}
+
+.avgGradeBox p {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-align:center;
+	line-height:20px;
+}
+
+.avgGradeLeft {
+	background-color: #000;
+	float:left;
+}
+
+.avgGradeRight {
+	color: #000;
+	background-color: #fff;
+	float:right;
+}
+
+.ageEpisode {
+	margin-left: 20px;
+}
+
+.ageEpisode p {
+	margin:10px 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ccc;
+}
+
+.infoBox {
+	
+}
+
+.episodeBox {
+	display:none;
+}
+
+.infoBox, .episodeBox {
+	margin: 20px 0;
+}
+
+.synopsis {
+	width: 50%;
+	margin: 20px 0;
+}
+
+.summary {
+	font-size: 12px;
+	
+}
+
+.summary li {
+	color: #ccc;
+}
+
+.summary li a {
+	color: #ccc;
+}
+
+.summary li a:hover {
+	color: #fff;
+}
+
+.summaryLeft {
+	display: inline-block;
+	width: 50px;
+}
+
+.playBox {
+	margin: 20px 0;
+}
+
+.playBox > div {
+	float: left;
+	margin-right: 20px;
+}
+
+.playBox button {
+	background-color: #000;
+	color: #ccc;
+	font-size: 16px;
+	height: 36px;
+	text-align:center;
+	line-height: 36px;
+	font-weight: bold;
+	cursor:pointer;
+	border:none;
+}
+
+.playBox button:hover {
+	color: #fff;
+}
+
+.play {
+	background-color: #F82F62;
+	width: 80px; height: 36px;
+	text-align:center;
+	border-radius: 5px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.play a { display:block;}
+
+.setGradeBox > div {
+	float: left
+}
+
+.setGradeWordBox {
+	width: 150px;
+}
+
+.setGradeWord {
+	font-size:14px;
+	color: #ccc;
+	font-weight:bold;
+}
+.starBoxIn {
+	position:relative;
+	width:80px;
+}
+
+.emptyStar {
+	position:absolute;
+	top:0;
+}
+
+.fullStar {
+	position:absolute;
+	top:0;
+	width:50%;
+	overflow:hidden;
+}
+
+.star10 {
+	position:absolute;
+	height: 100%;
+	top:0; left:0;
+}
+
+.star20 {
+	position:absolute;
+	height: 100%;
+	top:0; left:8px;
+}
+
+.star30 {
+	position:absolute;
+	height: 100%;
+	top:0; left:16px;
+}
+
+.star40 {
+	position:absolute;
+	height: 100%;
+	top:0; left:24px;
+}
+
+.star50 {
+	position:absolute;
+	height: 100%;
+	top:0; left:32px;
+}
+
+.star60 {
+	position:absolute;
+	height: 100%;
+	top:0; left:40px;
+}
+
+.star70 {
+	position:absolute;
+	height: 100%;
+	top:0; left:48px;
+}
+
+.star80 {
+	position:absolute;
+	height: 100%;
+	top:0; left:56px;
+}
+
+.star90 {
+	position:absolute;
+	height: 100%;
+	top:0; left:64px;
+}
+
+.star100 {
+	position:absolute;
+	height: 100%;
+	top:0; left:72px;
+}
+
+.episodeList {
+	margin: 20px 0;
+}
+
+.episodeList li {
+	float:left;
+	margin-right: 30px;
+	width:300px;
+}
+
+.thumbImgBox {
+	height: 200px;
+}
+
+.thumbImgBox a {
+	display:block;
+}
+
+.thumbImgBox img {
+	width: 100%; height:100%; object-fit: cover;
+}
+
+.thumbNo {
+	color:#ccc;
+	font-size:14px;
+}
+
+.thumbMinute {
+	color:#ccc;
+	font-size:14px;
+}
+
+.thumbTitle {
+	color:#ccc;
+	font-weight:bold;
+}
+
+.buttonListBox {
+	position:absolute;
+	bottom: 20px;
+}
+
+.buttonList {
+	width: 190px;
+	margin: 0 auto;
+}
+
+.buttonList li {
+	float: left;
+	color: #bbb;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	height: 40px;
+}
+
+.buttonList li:first-child {
+	margin-right: 30px;
+}
+
+.buttonList li:hover {
+	color: #eee;
+	border-bottom:solid 5px #eee;
+	height: 40px;
+}

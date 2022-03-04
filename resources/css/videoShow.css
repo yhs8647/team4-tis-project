@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+#wrap {
+	position:relative;
+}
+
+.menubar {
+	width:500px;
+	height: 100%;
+	position: absolute;
+	left: 0; top: 0;
+	background-color:#000;
+	z-index:500;
+	border: 1px solid #141414;
+	display: none;
+}
+
+.menubarHead {
+	height: 80px;
+	background-color:#141414;
+	padding: 20px 10px;
+}
+
+.menubarHead h1 {
+	float:left;
+	color:#eee;
+}
+
+.menubarClose {
+	float:right;
+	color:#ccc;
+	background-color:#141414;
+	font-size: 20px;
+	font-weight: bold;
+	cursor:pointer;
+	margin-top:10px;
+	border:none;
+}
+
+.menubarVideoCount {
+	border: 1px solid #141414;
+	padding:10px;
+}
+
+.menubarVideoCount p {
+	float: right;
+}
+
+
+.menubarVideoList li {
+	border: 1px solid #141414;
+	padding: 10px;
+}
+
+.clearBox > div {
+	float:left;
+}
+
+.videoListImgBox {
+	width: 180px; height:120px;
+}
+
+.videoListImgBox a {
+	display: block;
+	height: 100%;
+}
+
+.videoListImgBox img {width: 100%; height:100%; object-fit: cover;}
+
+.videoListText {
+	margin-left: 20px;
+}
+
+.videoListTitle {
+	font-size:18px;
+}
+
+.videoListMinute {
+	padding-top:20px;
+	font-size:12px;
+}
+
+.videoHead {
+	padding: 20px;
+}
+
+.openList {
+	background-color: #000;
+	border: none;
+	color: #ccc;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:bold;
+	float:left;
+	margin-top: 10px;
+}
+
+.videoTextBox {
+	float:left;
+	margin-left: 20px;
+}
+
+.videoTitle {
+	font-size: 20px;
+}
+
+.videoText {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ccc;
+}
+
+.stopVideo {
+	float:right;
+	margin-top: 10px;
+}
+
+.video video{
+	width:100%;
+}
+
