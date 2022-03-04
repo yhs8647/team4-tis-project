@@ -1,0 +1,87 @@
+<!--jsp파일 내용 그대로 html로 옴긴 파일입니다.-->
+<html>
+  <head>
+    <link rel="stylesheet" href="resources/css/style.css?after" />
+    <link rel="stylesheet" href="resources/css/profile.css?after" />
+    <link rel="stylesheet" href="resources/css/getBoard.css?" />
+
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="content">
+        <header>
+          <nav class="leftmenu">
+            <a class="logolink" href="#">
+              <img src="resources/img/logo.png" class="logoimg" />
+            </a>
+            <section class="leftsction">
+              <ul class="leftmenubuttonul">
+                <li class="leftmenubuttonli">
+                  <a href="#">영상 보기</a>
+                </li>
+                <li class="leftmenubuttonli">
+                  <a href="BoardList.html">평점 게시판</a>
+                </li>
+                <li class="leftmenubuttonli">
+                  <a href="mymovie.html">마이페이지</a>
+                </li>
+                <li class="leftmenubuttonli">
+                  <a href="manager.html">관리자페이지</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </header>
+        <main class="maincontent">
+          <a class="logout" href="Login.html">Log-out</a>
+          <div id="btn_detail">
+            <a class="insert" href="insertBoard.html">게시물 등록</a>
+            &nbsp;&nbsp;
+            <a class="delete" href="BoardList.html"
+              >게시물 삭제</a
+            >
+          </div>
+
+          <div id="selectBoard">
+            <form action="BoardList.html" method="post">
+              <table id="board_detail">
+                <tr class="firstBoard">
+                  <th>제목</th>
+                  <td class="title">
+                    <input name="title" type="text" value="${board.title}" />
+                  </td>
+                  <th>조회수</th>
+                  <td>${board.cnt}</td>
+                </tr>
+                <tr class="secondBoard">
+                  <th>작성자</th>
+                  <td colspan="3">${board.writer}</td>
+                </tr>
+                <tr class="thirdBoard">
+                  <th>내용</th>
+                  <td colspan="3">
+                    <textarea name="content" cols="40" rows="10">
+${board.content}</textarea
+                    >
+                  </td>
+                </tr>
+                <tr class="fourthBoard">
+                  <!-- 수정일로? -->
+                  <th>등록일</th>
+                  <td colspan="3">${board.regDate}</td>
+                </tr>
+              </table>
+              <br />
+              <input class="list" type="submit" value="글 목록" />
+            </form>
+          </div>
+        </main>
+      </div>
+      <footer>
+        <nav class="footbar"></nav>
+      </footer>
+    </div>
+  </body>
+</html>

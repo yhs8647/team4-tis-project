@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="resources/css/BoardStyle.css"> 
+	<link rel="stylesheet" href="resources/css/manager.css"> 
 	<title>insertBoard</title>
 </head>
 <body>
@@ -28,6 +28,9 @@
 						</li>
 						<li class="leftmenubuttonli">
 							<a href="manager.html">관리자페이지</a>
+                                <li class="managersub">
+                                    <a href="insertmovietitle.html" class="profilea"> 영상 등록</a>
+                                </li>
 						</li>					
 					</ul>
 	
@@ -36,35 +39,33 @@
 			</header>
 			<main class="maincontent"  align="center">
 			<br><br><br>
-            <h2>
-                <a href="#">자유 게시판 - 새글 등록</a>
-            </h2>
+            <h1>
+                <a href="#">관리자 페이지 - 영상 등록</a>
+            </h1>
             <br><br><br><br>
-            <table border="1" cellpadding="0" cellspacing="0" width="500">
-                <tr>
-                    <th bgcolor="white" width="100" height="50">제목</th>
-                    <td align="left"><input type="text" /></td>
+            <table class="insertmovie" border="1" cellpadding="0" cellspacing="0">
+                <tr class="inserttr">
+                    <th>타이틀</th>
+                    <td><input type="text" /></td>
                 </tr>
-                <tr>
-                    <th bgcolor="white" width="100" height="50">작성자</th>
-                    <td align="left"><input type="text" /></td>
+                <tr class="inserttr">
+                    <th>제목</th>
+                    <td><input type="text" /></td>
                 </tr>
-                <tr>
-                    <th bgcolor="white" width="100" height="300">내용</th>
-                    <td rows="200px" align="left">
-						<textarea name="content" cols="60" rows="20" ></textarea>
-					</td>
+                <tr class="inserttr">
+                    <th>영상 화 번호</th>
+                    <td><input type="text" /></td>
                 </tr>
-                <tr>
-                    <th bgcolor="white" width="100" height="50">파일추가</th>
-                    <td align="left"><input type="file" name="uploadFile" /></td>
+                <tr class="inserttr">
+                    <th>영상파일추가</th>
+                    <td><input type="file" name="uploadFile" /></td>
                 </tr>
             
                 
             </table>
-            <br>
-            <a href="BoardList.html">등록</a>
-
+            <br><br><br>
+            <a href="manager.html">등록</a>
+            <a href="insertmovietitle.html">뒤로가기</a>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</main>		
 		</div>

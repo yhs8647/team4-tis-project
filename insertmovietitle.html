@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resources/css/manager.css"> 
+	<title>insertBoard</title>
+</head>
+<body>
+	<div id = "root">
+		<div class="content">
+			<header>
+				<nav class="leftmenu">
+					<a class="logolink" href="#">
+						<img src="resources/img/logo.png" class="logoimg" >	
+					</a>
+				<section class="leftsction">
+					<ul class="leftmenubuttonul">
+						<li class="leftmenubuttonli">
+							<a href="#">영상 보기</a>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="BoardList.html">평점 게시판</a>
+						</li>	
+						<li class="leftmenubuttonli">
+							<a href="mymovie.html">마이페이지</a>
+						</li>
+						<li class="leftmenubuttonli">
+							<a href="manager.html">관리자페이지</a>
+                                <li class="managersub">
+                                    <a href="#" class="profilea"> 영상 등록</a>
+                                </li>
+						</li>					
+					</ul>
+	
+				</section>
+				</nav>
+			</header>
+			<main class="maincontent"  align="center">
+                <br><br><br>
+                <h1>
+                    <a href="#">관리자 페이지 - 영상 타이틀 등록</a>
+                </h1>
+                <br>
+                <table class="insertmovie" border="1" cellpadding="0" cellspacing="0">
+                    <tr class="inserttr">
+                        <th>제목</th>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>시놉시스</th>
+                        <td><textarea name="content" cols="55" rows="20"></textarea></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>배우</th>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>감독</th>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>개봉일</th>
+                        <td><input type="date" min = "1900-01-01"/></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>시청연령</th>
+                        <td>
+                            <input type="radio" id="free" name="age" value="free">
+                            <label>연령 제한 없음</label><br>
+                            <input type="radio" id="twelve" name="age" value="twelve">
+                            <label>12세</label><br>
+                            <input type="radio" id="fifteen" name="age" value="fifteen">
+                            <label>15세</label><br>
+                            <input type="radio" id="Adult" name="age" value="Adult">
+                            <label>청소년 시청불가</label>
+                        </td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>장르</th>
+                        <td>
+                            <input type="checkbox"> 장르1
+                            <input type="checkbox"> 장르2
+                            <input type="checkbox"> 장르3<br>
+                            <input type="checkbox"> 장르4
+                            <input type="checkbox"> 장르5
+                            <input type="checkbox"> 장르6
+                        </td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>국가</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>시리즈 여부</th>
+                        <td>
+                            <input type="radio" id="yes" name="series" value="yes">
+                            <label>O</label>
+                            <input type="radio" id="no" name="series" value="no">
+                            <label>X</label>
+                        </td>
+                    </tr>
+                    <tr class="inserttr">
+                        <th>포스트 이미지</th>
+                        <td><input type="file" name="uploadFile">
+                    </tr>
+                    <tr class="inserttr">
+                        <th>백그라운드 이미지</th>
+                        <td><input type="file" name="uploadFile">
+                    </tr>
+                
+                    
+                </table>
+                <br><br><br>
+                <a href="insertmovie.html">영상 등록하기</a>
+                <a href="manager.html">취소</a>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</main>		
+		</div>
+		<footer>
+			<nav class="footbar">footer</nav>
+		</footer>
+	</div>
+</body>
+</html>
