@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="resources/css/manager.css"> 
+	<link rel="stylesheet" href="resources/css/reset.css">
+	<link rel="stylesheet" href="resources/css/home.css"> 
 	<title>insertBoard</title>
 </head>
 <body>
@@ -18,7 +20,7 @@
 				<section class="leftsction">
 					<ul class="leftmenubuttonul">
 						<li class="leftmenubuttonli">
-							<a href="#">영상 보기</a>
+							<a href="home.html">영상 보기</a>
 						</li>
 						<li class="leftmenubuttonli">
 							<a href="search.html">검색</a>
@@ -40,23 +42,279 @@
 				</section>
 				</nav>
 			</header>
-			<main class="maincontent"  align="center">
-			<br><br><br>
-            <h1>
-                <a href="#">관리자 페이지</a>
-            </h1>
-            <br><br><br><br>
-            
-            <h1>메인 페이지 영상 목록</h1>
-            <h2>각 영상에 체크리스트</h2>
+			<main class="maincontent"  >
+				<br><br><br>
+				<h1>
+					<a href="#">관리자 페이지</a>
+				</h1>
+				<br><br><br><br>
+				
+				<ul class="headContent clear">
+					<li>
+						<a href="videoInfo.html">
+							<div>
+								<p class="headType">제일 평점이 높은 영상!</p>
+								<h3 class="headTitle">영상제목 1</h3>
+								<p class="headComment">영상 설명 1</p>
+								<div class="headImgBox">
+									<img alt="헤드영상1" src="">
+								</div>
+								<input type="checkbox">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div>
+								<p class="headType">최신 영상!</p>
+								<h3 class="headTitle">영상제목 2</h3>
+								<p class="headComment">영상 설명 2</p>
+								<div class="headImgBox">
+									<img alt="헤드영상2" src="">
+								</div>
+								<input type="checkbox">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div>
+								<p class="headType">제일 많이 본 영상!</p>
+								<h3 class="headTitle">영상제목 3</h3>
+								<p class="headComment">영상 설명 3</p>
+								<div class="headImgBox">
+									<img alt="헤드영상3" src="">
+								</div>
+								<input type="checkbox">
+							</div>
+						</a>
+					</li>
+				</ul>
+				<ul class="category clear">
+					<li class="categoryAll on">
+						전체
+					</li>
+					<li class="categoryMovie">
+						영화
+					</li>
+					<li class="categoryTV">
+						TV 프로그램
+					</li>
+				</ul>
+				<div class="mainContent">
+					<h2 class="mainIntro">최고 평점 5</h2>
+					<ul class="bestGradeVideo videoList clear">
+						<li>
+							<a href="#">
+								<img alt="평점 높은 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="평점 높은 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="평점 높은 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="평점 높은 영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="평점 높은 영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+					
+					<h2 class="mainIntro">최신 영상 5</h2>
+					<ul class="newVideo videoList clear">
+						<li>
+							<a href="#">
+								<img alt="최신 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="최신 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="최신 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="최신 영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="최신 영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+					
+					<h2 class="mainIntro">많이 본 영상 5</h2>
+					<ul class="bestViewVideo videoList clear">
+						<li>
+							<a href="#">
+								<img alt="많이 본 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="많이 본 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="많이 본 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="많이 본 영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="많이 본 영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+					
+					<h2 class="mainIntro">>추천 장르 1 영상 5</h2>
+					<ul class="recommandVideo1 videoList clear">
+						<li>
+							<a href="#">
+								<img alt="추천 장르 1 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 1 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 1 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 1  영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 1  영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+					
+					<h2 class="mainIntro">추천 장르 2 영상 5</h2>
+					<ul class="recommandVideo2 videoList clear">
+						<li>
+							<a href="#">
+								<img alt="추천 장르 2 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 2 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 2 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 2 영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 2 영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+					
+					<h2 class="mainIntro">추천 장르 3 영상 5</h2>
+					<ul class="recommandVideo3 videoList clear">
+						<li>
+							<a href="#">
+								<img alt="추천 장르 3 영상 1" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 3 영상 2" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 3 영상 3" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 3 영상 4" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+						<li>
+							<a href="#">
+								<img alt="추천 장르 3 영상 5" src="">
+							</a>
+							<input type="checkbox">
+						</li>
+					</ul>
+				</div>
 
-            <br><br><br><br>
-            <a href="insertmovietitle.html">타이틀 등록</a>
-			<a href="insertmovie.html">영상 등록</a>
-            <a href="updatemovietitle.html">수정</a>
-			<a href="#">삭제</a>
-
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br>
+				<div class="crud">
+					<a href="insertmovietitle.html">타이틀 등록</a>
+					<a href="insertmovie.html">영상 등록</a>
+					<a href="updatemovietitle.html">수정</a>
+					<a href="#">삭제</a>
+				</div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</main>		
 		</div>
 		<footer>

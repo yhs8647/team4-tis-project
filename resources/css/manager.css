@@ -13,6 +13,7 @@ html {
 }
 
 
+
 body {
   margin: 0;
 }
@@ -140,3 +141,6 @@ table{
     color: #fff;
 }
 
+.crud{
+	text-align: center;
+}

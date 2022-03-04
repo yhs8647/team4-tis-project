@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+footer {
+	padding: 50px;
+}
+
+.footerService li {
+	float: left;
+	color: #ccc; font-size: 14px;
+	padding: 10px 2px;
+}
+
+.footerService li:first-child {
+	padding: 10px 2px 10px 0;
+}
+
+.footerService li:nth-child(2n-1) {
+	cursor: pointer
+}
+
+.footerPrivacyPolicy {
+	font-weight: bold;
+}
+
+.footerContact li {
+	font-size: 14px;
+}
+
+.footerContactLeft {
+	display: inline-block;
+	width: 200px;
+}
