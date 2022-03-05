@@ -9,6 +9,32 @@
     </head>
     <body>
         <div id = "root">
+            <div class="popupback">
+                <div class="window">
+                    <div class="popup">
+                        <section class="popuptitlebox">
+                            <h3 class="popuptitle">이용권을 선택해주세요</h3>
+                            <h4 class="popuptitle">언제든지 해지할 수 있고, 무료 이용 기간에는 과금이 되지 않습니다.</h4>
+                            <p class="popuptitle">단, 무료이용기간이 지난뒤에는 자동으로 결제됩니다.</p>
+                            <div class="css-1fzyv29-PlanTable">
+                                <ul class="popupcontent">
+                                  <li class="popupcontentli"></li>
+                                  <li class="popupcontentli">월 요금</li>
+                                  <li class="popupcontentli">동시 재생이 가능한 수</li>
+                                  <li class="popupcontentli">지원하는 최대 화질</li>
+                                  <li class="popupcontentli">HDR 10+의 선명한 화질</li>
+                                  <li class="popupcontentli">저장 가능한 다운로드 영상 수</li>
+                                  <li class="popupcontentli">TV, 폰, 태블릿, PC에서 재생</li>
+                                </ul>  
+                            <div class="popupbutton">
+                                <button id="OK">결제완료</button> <button id="closepop">창 닫기</button>
+                            </div>    
+                            </section>
+
+                    </div>
+
+                </div>
+            </div>
             <div class="content">
                 <header>
                     <nav class="leftmenu">
@@ -18,7 +44,10 @@
                     <section class="leftsction">
                         <ul class="leftmenubuttonul">
                             <li class="leftmenubuttonli">
-                                <a href="#">영상 보기</a>
+                                <a href="home.html">영상 보기</a>
+                            </li>
+                            <li class="leftmenubuttonli">
+                                <a href="search.html">검색</a>
                             </li>
                             <li class="leftmenubuttonli">
                                 <a href="BoardList.html">평점 게시판</a>
@@ -68,10 +97,29 @@
 			<nav class="footbar">
                 <div class="money">
 				    <h5>첫 2주 무료체험 이벤트! 모든 작품, 무제한 감상하세요. 마음에 들지 않으면 클릭 한 번으로 언제든 해지할 수 있어요</h5>
-                    <button class="payment">결제하기</button> <button class="close">창 닫기</button> 
+                    <button id="payment">결제하기</button> <button id="close">닫 기</button> 
                 </div>    
-            <nav>
+			</nav>
 		</footer>
 	</div>
 </body>
+<script>
+    function payment(){
+        document.querySelector(".popupback").className="popupback show";
+    }
+
+    function closepop(){
+        document.querySelector(".popupback").className="popupback";
+    }
+
+    function close(){
+        document.querySelector(".footbar").className="footbar off";
+    }
+    document.querySelector("#payment").addEventListener("click", payment);
+    document.querySelector("#close").addEventListener("click", close);
+ // document.querySelector(".popupback").addEventListener("click", closepop);
+    document.querySelector("#closepop").addEventListener("click",closepop)
+
+
+</script>
 </html>
