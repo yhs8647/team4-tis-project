@@ -5,6 +5,7 @@
 
 .lockerbox td:first-child img{
 	margin-left:60px;
+	margin-bottom:24px;
 }
 
 
@@ -161,4 +162,9 @@ h5{
 .popupcontent, .popupcontentli{
 	list-style:none;
 	color:#fff;
+}
+
+
+.footbar{
+	z-index:502;
 }
